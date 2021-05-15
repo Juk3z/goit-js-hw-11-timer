@@ -27,8 +27,8 @@ class CountdownTimer  {
   }
   
   start() {
-    const x = this.updateTimer.bind(this);
-     setInterval(x, 1000)
+    const updateTimerBinder = this.updateTimer.bind(this);
+     setInterval(updateTimerBinder, 1000)
   }
 
 };
