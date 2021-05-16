@@ -1,7 +1,9 @@
 class CountdownTimer  {
   constructor({ selector, targetDate}) {
       this.selector = selector,
-      this.targetDate = targetDate      
+      this.targetDate = targetDate,
+      this.updateTimer(),
+      this.start();
   }
 
   updateTimer() {
@@ -39,7 +41,7 @@ const mainTimer = new CountdownTimer({
   targetDate: new Date('Jul 17, 2021'),
 });
 
-mainTimer.start();
+
 
 
 
